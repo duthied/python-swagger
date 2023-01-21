@@ -1,6 +1,9 @@
 <!-- templates/example.html -->
 <html>
-  <div class="meme">
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='example.css') }}">
+  </head>
+  <div class="content">
     <p class="top">{{top}}</p>
     <p class="bottom">{{bottom}}</p>
   </div>
